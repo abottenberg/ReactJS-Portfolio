@@ -1,0 +1,70 @@
+@import './_colors.scss';
+
+// Small devices (portrait phones)
+@media (min-width: 100px) and (max-width: 575px) {
+  .menu-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    // align-items: flex-end;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .menu-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    // align-items: flex-end;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    // align-items: flex-end;
+  }
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  margin: 16px;
+  transition: 0.3s;
+  position: relative;
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+
+}
+
+.menu-list {
+  width: 60%;
+  flex-direction: column;
+  position: absolute;
+  bottom: 35%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+.dropdown-items {
+  width: 35%;
+  margin: 16px;
+
+}
+
+.about {
+
+}
+
