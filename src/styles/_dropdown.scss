@@ -3,32 +3,34 @@
 // Small devices (portrait phones)
 @media (min-width: 100px) and (max-width: 575px) {
   .menu-container {
-    display: flex;
     height: 100vh;
     width: 100%;
-    align-items: flex-end;
+    .menu-list {
+      margin-top: -80px;
+    }
+  }
+  .menu-div {
+    top: 16px;
+    z-index: 1000000;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .menu-container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: flex-end;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .menu-container {
-    display: flex;
     height: 100vh;
     width: 50%;
-    align-items: flex-end;
+    .menu-list {
+      width: 50%;
+      position: fixed;
+      bottom: 250px;
+    }
+  }
+  .menu-div {
+    position: fixed;
+    bottom: 16px;
   }
 }
+
 
 .menu {
   cursor: pointer;
@@ -36,7 +38,6 @@
   display: flex;
   margin: 16px;
   transition: 0.3s;
-  position: relative;
   &:hover {
     transform: scale(1.01);
     transition: 0.3s;
@@ -56,49 +57,44 @@
   }
 }
 
-.menu-list {
-  width: 60%;
-  flex-direction: column;
-  position: absolute;
-  bottom: 35%;
-  .about {
-    cursor: pointer;
-    path {
-    stroke: $orange;
-    stroke-dasharray: 2000;
-    animation: animate 3s;
+
+.about {
+  cursor: pointer;
+  path {
+  stroke: $orange;
+  stroke-dasharray: 2000;
+  animation: animate 3s;
+  }
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+  }
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 2000;
     }
-    &:hover {
-      transform: scale(1.01);
-      transition: 0.3s;
-    }
-    @keyframes animate {
-      0% {
-        stroke-dashoffset: 2000;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
+    100% {
+      stroke-dashoffset: 0;
     }
   }
-  .projects {
-    cursor: pointer;
-    path {
-      stroke: $orange;
-      stroke-dasharray: 3000;
-      animation: animate 3s;
+}
+.projects {
+  cursor: pointer;
+  path {
+    stroke: $orange;
+    stroke-dasharray: 3000;
+    animation: animate 3s;
+  }
+  &:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+  }
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 3000;
     }
-    &:hover {
-      transform: scale(1.01);
-      transition: 0.3s;
-    }
-    @keyframes animate {
-      0% {
-        stroke-dashoffset: 3000;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
+    100% {
+      stroke-dashoffset: 0;
     }
   }
 }
@@ -110,14 +106,3 @@
 .show {
   display: inline-block;
 }
-
-.dropdown-items {
-  width: 35%;
-  margin: 16px;
-
-}
-
-.about {
-
-}
-

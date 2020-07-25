@@ -1,5 +1,6 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .background-container {
+    z-index: -1;
     padding: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,6 +13,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .background-container {
+    z-index: -1;
     padding: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,13 +26,14 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .background-container {
-  padding: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  position: absolute;
+    z-index: -1;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    position: absolute;
 
-}
+  }
 }
 
 // Large devices (desktops, 992px and up)

@@ -20,9 +20,9 @@ const Background = () => {
     a, l, e, x, b, o, t, tt, ee, n, bb, eee, r, g
   ];
 
-  const renderedLetters = letters.map((letter) => {
+  const renderedLetters = letters.map((letter, index) => {
     return (
-      <div className="letter" style={{ "text-align": "center "}}>
+      <div key={index} className="letter" style={{ "textAlign": "center "}}>
         <img src={letter} alt="background" />
       </div>
     );
