@@ -6,7 +6,7 @@
     display: flex;
     height: 100vh;
     width: 100%;
-    // align-items: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -16,7 +16,7 @@
     display: flex;
     height: 100vh;
     width: 100%;
-    // align-items: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -26,21 +26,34 @@
     display: flex;
     height: 100vh;
     width: 50%;
-    // align-items: flex-end;
+    align-items: flex-end;
   }
 }
 
 .menu {
+  cursor: pointer;
   width: 80%;
   display: flex;
   margin: 16px;
   transition: 0.3s;
   position: relative;
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: 0.3s;
   }
-
+  path {
+    stroke: $blue;
+    stroke-dasharray: 2053;
+    animation: animate 3s;
+  }
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 2053;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
 }
 
 .menu-list {
@@ -48,6 +61,46 @@
   flex-direction: column;
   position: absolute;
   bottom: 35%;
+  .about {
+    cursor: pointer;
+    path {
+    stroke: $orange;
+    stroke-dasharray: 2000;
+    animation: animate 3s;
+    }
+    &:hover {
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 2000;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .projects {
+    cursor: pointer;
+    path {
+      stroke: $orange;
+      stroke-dasharray: 3000;
+      animation: animate 3s;
+    }
+    &:hover {
+      transform: scale(1.01);
+      transition: 0.3s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 3000;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
 }
 
 .hide {
