@@ -1,5 +1,51 @@
-body {
-  background: url('../images/alex_bottenberg_background.png') no-repeat fixed center;
-  background-size: contain;
-  // background-size: fill;
+@media (min-width: 100px) and (max-width: 575px) {
+  .background-container {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    position: absolute;
+
+  }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .background-container {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    position: absolute;
+
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .background-container {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  position: absolute;
+
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .background-container {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    position: absolute;
+
+  }
+}
+
+
+
+
+
