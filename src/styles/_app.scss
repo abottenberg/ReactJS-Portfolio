@@ -1,12 +1,12 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .background-container {
     z-index: -1;
-    padding: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
-
+    overflow-x: hidden;
+    width: 100vw;
   }
 }
 
@@ -14,12 +14,13 @@
 @media (min-width: 576px) {
   .background-container {
     z-index: -1;
-    padding: 16px;
+    padding: 16px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
-
+    overflow-x: hidden;
+    width: 100vw;
   }
 }
 
@@ -27,24 +28,26 @@
 @media (min-width: 768px) {
   .background-container {
     z-index: -1;
-    padding: 16px;
+    padding: 16px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
-
+    overflow-x: hidden;
+    width: 100vw;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .background-container {
-    padding: 16px;
+    padding: 16px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
-
+    overflow-x: hidden;
+    width: 100vw;
   }
 }
 

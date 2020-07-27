@@ -3,15 +3,46 @@
 // Small devices (portrait phones)
 @media (min-width: 100px) and (max-width: 575px) {
   .menu-container {
-    height: 100vh;
     width: 100%;
     .menu-list {
-      margin-top: -80px;
+      margin-top: -160px;
+      margin-left: -20px;
     }
   }
   .menu-div {
-    top: 16px;
+    margin-top: -80px;
     z-index: 1000000;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .menu-container {
+    width: 50%;
+  }
+  .menu-div {
+    margin-top: -100px;
+    margin-bottom: -100px;
+    z-index: 1000000;
+  }
+  .dropdown-items {
+    width: 150px;
+    margin-left: 16px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-div {
+    margin-top: -8px;
+    z-index: 1000000;
+  }
+  .dropdown-items {
+    width: 600px;
+    margin: 16px;
   }
 }
 
@@ -20,21 +51,25 @@
     height: 100vh;
     width: 50%;
     .menu-list {
-      width: 50%;
       position: fixed;
       bottom: 250px;
     }
   }
   .menu-div {
     position: fixed;
-    bottom: 16px;
+    bottom: 110px;
+    width: 50vw;
   }
+}
+
+ul {
+  list-style-type: none;
 }
 
 
 .menu {
+  width: 100%;
   cursor: pointer;
-  width: 80%;
   display: flex;
   margin: 16px;
   transition: 0.3s;
@@ -43,7 +78,7 @@
     transition: 0.3s;
   }
   path {
-    stroke: $blue;
+    stroke: $pink;
     stroke-dasharray: 2053;
     animation: animate 3s;
   }
