@@ -1,0 +1,28 @@
+@import './_colors.scss';
+
+.about-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  font-family: $main;
+  font-size: 24px;
+  font-weight: 500;
+  p {
+    margin-bottom: 40px;
+  }
+  .github {
+    color: $orange;
+    margin: 16px;
+  }
+  .linkedin {
+    color: $pink;
+    margin: 16px;
+  }
+}
