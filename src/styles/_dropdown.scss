@@ -4,14 +4,17 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .menu-container {
     width: 100%;
+    padding-right: 24px;
+
     .menu-list {
-      margin-top: -160px;
+      margin-top: -100px;
       margin-left: -20px;
     }
   }
   .menu-div {
     margin-top: -80px;
-    z-index: 1000000;
+    z-index: 100000;
+
   }
 }
 
@@ -21,12 +24,12 @@
     width: 50%;
   }
   .menu-div {
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -70px;
+    margin-bottom: -80px;
     z-index: 1000000;
   }
   .dropdown-items {
-    width: 150px;
+    width: 200px;
     margin-left: 16px;
   }
 }
@@ -52,12 +55,13 @@
     width: 50%;
     .menu-list {
       position: fixed;
-      bottom: 350px;
+      bottom: 250px;
+      z-index: 1000000;
     }
   }
   .menu-div {
     position: fixed;
-    bottom: 110px;
+    bottom: 80px;
     width: 50vw;
   }
 }
@@ -95,6 +99,7 @@ ul {
 
 .about {
   cursor: pointer;
+  margin-bottom: -24px;
   path {
   stroke: $orange;
   stroke-dasharray: 2000;
@@ -115,6 +120,7 @@ ul {
 }
 .projects {
   cursor: pointer;
+  margin-bottom: -24px;
   path {
     stroke: $orange;
     stroke-dasharray: 3000;

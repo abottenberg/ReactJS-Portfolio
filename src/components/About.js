@@ -15,25 +15,9 @@ const page = [
         <a className="github" href="https://github.com/abottenberg" target="blank">Github</a>
         <a className="linkedin" href="https://www.linkedin.com/in/alex-bottenberg/" target="blank">LinkedIn</a>
       </div>
-    </animated.div>
-  )
-];
-
-const About = () => {
-  return (
-    <div>
-      <Transition
-        native
-        reset
-        unique
-        from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
-        enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
-        leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}>
-        {index => page[0]}
-      </Transition>
-      <div className="project-buttons">
+       <div className="about-buttons">
         <Link href="/">
-          <svg className="close"
+          <svg className="close-about"
             width="243px" height="100px"
             viewBox="0 0 243 208"
             version="1.1"
@@ -59,6 +43,22 @@ const About = () => {
           </svg>
         </Link>
       </div>
+    </animated.div>
+  )
+];
+
+const About = () => {
+  return (
+    <div>
+      <Transition
+        native
+        reset
+        unique
+        from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
+        enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
+        leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}>
+        {index => page[0]}
+      </Transition>
     </div>
   );
 };

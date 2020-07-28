@@ -25,6 +25,14 @@
     display: inline-block;
     text-align: right;
   }
+  .project-buttons {
+    z-index: 10000;
+    display: flex;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    padding: 16px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -54,9 +62,11 @@
     text-align: right;
     width: 50%;
     height: 100vh;
+    overflow: scroll;
     position: fixed;
     top: 0;
     right: 0;
+    padding-top: 80px;
   }
   .projects-page-container {
     height: 100vh;
@@ -67,7 +77,7 @@
     display: flex;
     text-align: left;
     position: fixed;
-    bottom: 0;
+    top: 0;
     padding: 16px;
   }
 }
@@ -98,8 +108,9 @@
 }
 
 .video {
-  margin: 24px;
+  margin: 24px auto;
   width: 95%;
+  text-align: center;
 }
 
 .hide {
@@ -107,6 +118,7 @@
 }
 
 .text {
+
   margin: 24px;
   p {
     font-family: $main;

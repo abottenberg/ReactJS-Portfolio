@@ -73,16 +73,6 @@ export default class Projects extends React.Component {
   render() {
     return (
       <div>
-        <Transition
-          native
-          reset
-          unique
-          items={this.state.index}
-          from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
-          enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
-          leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}>
-          {index => pages[index]}
-        </Transition>
         <div className="project-buttons">
           <Link href="/">
             <svg className="close"
@@ -130,6 +120,16 @@ export default class Projects extends React.Component {
             </g>
           </svg>
         </div>
+        <Transition
+          native
+          reset
+          unique
+          items={this.state.index}
+          from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
+          enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
+          leave={{ opacity: 0, transform: 'translate3d(-50%,0,0)' }}>
+          {index => pages[index]}
+        </Transition>
       </div>
     );
   };
