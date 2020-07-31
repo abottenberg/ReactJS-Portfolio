@@ -14,6 +14,7 @@ import eee from '../images/letters/11.png';
 import r from '../images/letters/12.png';
 import g from '../images/letters/13.png';
 import '../styles/_app.scss';
+import '../styles/_background.scss';
 
 const Background = () => {
   const letters = [
@@ -22,7 +23,7 @@ const Background = () => {
 
   const renderedLetters = letters.map((letter, index) => {
     return (
-      <div key={index} className="letter" style={{ "textAlign": "center "}}>
+      <div key={index} className={`letter letter-${index}`} style={{ "textAlign": "center "}}>
         <img src={letter} alt="background" />
       </div>
     );
