@@ -2,7 +2,7 @@
   .background-container {
     z-index: -1;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
     overflow: hidden;
@@ -30,7 +30,7 @@
     z-index: -1;
     padding: 16px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
     position: absolute;
     overflow-x: hidden;
