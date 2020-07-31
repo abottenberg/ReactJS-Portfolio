@@ -41,11 +41,7 @@ const HorizontalScroll = ({ projects }) => {
   const renderedProjects = projects.map((project, index) => {
     return (
       <div key={index}>
-<<<<<<< HEAD
         <div className="video-container">
-=======
-        <div className="video">
->>>>>>> 99e75e20c9f72fe1859bb33e6d98fc7008dd0f0a
           <video className="video" loop autoPlay>
               <source src={project.video} type="video/mp4" />
           </video>
