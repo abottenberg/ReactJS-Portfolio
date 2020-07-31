@@ -1,89 +1,444 @@
 @import './_colors.scss';
 
-// Small devices (portrait phones)
+// Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .active-project {
-    display: inline-block;
-    text-align: right;
-    height: 100vh;
-    width: 100vw;
-    margin-top: 16px;
-  }
-  .project-buttons {
-    z-index: 10000;
-    display: flex;
-    text-align: left;
-    position: fixed;
-    bottom: 0;
+  .slide {
     padding: 16px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
+   .video {
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+  }
+  .alex-bottenberg {
+    transform: rotate(-90deg) translateX(-30vw) translateY(-55vh);
+    overflow-x: hidden;
+    height: 100vw;
+    padding: 16px;
+    path {
+
+      stroke-dasharray: 2053;
+      animation: animate 5s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 2053;
+      }
+      10% {
+        stroke-dashoffset: 2053;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .about-container {
+    margin: 40px;
+    width: 80%;
+    p {
+      font-size: 1em;
+      margin: 24px auto;
+    }
+    .is-visable-animate {
+      visibility: visible;
+      width: 280px;
+      path {
+        stroke: $pink;
+        stroke-dasharray: 4000;
+        animation: animate 3s;
+      }
+      @keyframes animate {
+        0% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        50% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          opacity: 1;
+        }
+      }
+      margin: 16px;
+    }
+
+    .linkedin {
+      visibility: hidden;
+    }
+    .github {
+      visibility: hidden;
+    }
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .active-project {
-    display: inline-block;
-    text-align: right;
-  }
-  .project-buttons {
-    z-index: 10000;
-    display: flex;
-    text-align: left;
-    position: fixed;
-    bottom: 0;
+  .slide {
+    text-align: center;
+    width: 100vw;
     padding: 16px;
+  }
+   .video {
+    margin: auto;
+    height: 60vh;
+    text-align: center;
+  }
+  .alex-bottenberg {
+    transform: rotate(0deg) translateX(0vw) translateY(0vh);
+    overflow-x: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 16px;
+    path {
+
+      stroke-dasharray: 2053;
+      animation: animate 5s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 2053;
+      }
+      10% {
+        stroke-dashoffset: 2053;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .about-container {
+    margin: 40px;
+    width: 80%;
+    p {
+      font-size: 1em;
+      margin: 24px auto;
+    }
+    .is-visable-animate {
+      visibility: visible;
+      width: 280px;
+      path {
+        stroke: $pink;
+        stroke-dasharray: 4000;
+        animation: animate 3s;
+      }
+      @keyframes animate {
+        0% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        50% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          opacity: 1;
+        }
+      }
+      margin: 16px;
+    }
+
+    .linkedin {
+      visibility: hidden;
+    }
+    .github {
+      visibility: hidden;
+    }
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .active-project {
-    display: inline-block;
-    text-align: right;
-    width: 100%;
+  .slide {
+    text-align: center;
+    width: 100vw;
     height: 100vh;
-    margin-top: 80px;
-  }
-  .project-buttons {
-    z-index: 10000;
-    display: flex;
-    text-align: left;
-    position: fixed;
-    bottom: 0;
     padding: 16px;
+  }
+   .video {
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+  }
+  .alex-bottenberg {
+    transform: rotate(0deg) translateX(0vw) translateY(0vh);
+    overflow-x: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 16px;
+    path {
+
+      stroke-dasharray: 2053;
+      animation: animate 5s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 2053;
+      }
+      10% {
+        stroke-dashoffset: 2053;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .about-container {
+    margin: 40px;
+    width: 80%;
+    p {
+      font-size: 1em;
+      margin: 24px auto;
+    }
+    .is-visable-animate {
+      visibility: visible;
+      width: 280px;
+      path {
+        stroke: $pink;
+        stroke-dasharray: 4000;
+        animation: animate 3s;
+      }
+      @keyframes animate {
+        0% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        50% {
+          stroke-dashoffset: 4000;
+          opacity: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          opacity: 1;
+        }
+      }
+      margin: 16px;
+    }
+
+    .linkedin {
+      visibility: hidden;
+    }
+    .github {
+      visibility: hidden;
+    }
   }
 }
 
-
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .active-project {
-    margin-top: 0;
-    display: inline-block;
-    text-align: right;
-    width: 50%;
+  .slide {
+    text-align: center;
+    width: 110vw;
     height: 100vh;
-    overflow: scroll;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding-top: 80px;
+    overflow-y: hidden;
   }
-  .projects-page-container {
-    height: 100vh;
-  }
-  .project-buttons {
-    z-index: 10000;
-    left: 50%;
+
+  .wrapper {
     display: flex;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    padding: 16px;
+    flex-direction: row;
+    width: 550vw;
+    overflow-x: hidden;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .video {
+  margin: 24px auto;
+  max-width: 900px;
+  height: 60vh;
+  text-align: center;
+}
+  .alex-bottenberg {
+    transform: rotate(0deg) translateX(0vw) translateY(0vh);
+    overflow-x: hidden;
+  height: 100%;
+  margin: 16px;
+  path {
+
+    stroke-dasharray: 2053;
+    animation: animate 4s;
+  }
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 2053;
+    }
+    10% {
+      stroke-dashoffset: 2053;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+.about {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: $main;
+  font-size: 18px;
+  font-weight: 500;
+  .about-container {
+    margin: 40px;
+    width: 80%;
+  }
+  p {
+    font-size: 1em;
+    margin: 24px auto;
+  }
+  .is-visable-animate {
+    visibility: visible;
+    height: 200px;
+    path {
+      stroke: $pink;
+      stroke-dasharray: 4000;
+      animation: animate 3s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 4000;
+        opacity: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+    margin: 16px;
+  }
+
+  .linkedin {
+    visibility: hidden;
+  }
+  .github {
+    visibility: hidden;
+  }
+}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .slide {
+    text-align: center;
+    width: 110vw;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 550vw;
+    overflow-x: hidden;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .video {
+  margin: 24px auto;
+  max-width: 900px;
+  height: 60vh;
+  text-align: center;
+}
+  .alex-bottenberg {
+  height: 100%;
+  margin: 16px;
+  path {
+
+    stroke-dasharray: 2053;
+    animation: animate 4s;
+  }
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 2053;
+    }
+    10% {
+      stroke-dashoffset: 2053;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+.about {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: $main;
+  font-size: 18px;
+  font-weight: 500;
+  .about-container {
+    margin: 40px;
+    width: 80%;
+  }
+  p {
+    font-size: 1em;
+    margin: 24px auto;
+  }
+  .is-visable-animate {
+    visibility: visible;
+    height: 200px;
+    path {
+      stroke: $pink;
+      stroke-dasharray: 4000;
+      animation: animate 3s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 4000;
+        opacity: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+    margin: 16px;
+  }
+
+  .linkedin {
+    visibility: hidden;
+  }
+  .github {
+    visibility: hidden;
   }
 }
 
+}
 
-.Turning {
+
+
+.turning {
   background-color: rgba(0,87,150,0.5);
   color: white;
   a {
@@ -91,7 +446,7 @@
   }
 }
 
-.Jokester {
+.jokester {
   background-color: $green;
   color: $pink;
   a {
@@ -99,7 +454,7 @@
   }
 }
 
-.Mister {
+.mister {
   background-color: rgba(220,255,3,0.5);
   color: $blue;
   a {
@@ -107,55 +462,74 @@
   }
 }
 
-.video {
-  margin: 24px auto;
-  width: 95%;
-  text-align: center;
-}
 
-.hide {
-  display: none;
-}
+
 
 .text {
-
-  margin: 24px;
-  p {
-    font-family: $main;
+  font-family: $main;
+  width: 60vw;
+  margin: auto;
+  text-align: right;
+  opacity: 0;
+  transform: translateY(4em);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+  .description {
+    font-size: .8em;
   }
-  h1 {
-    font-family: $main;
-  }
-  a {
-    font-family: $main;
+  .link {
+    font-size: .8em;
   }
 }
 
-.close {
-  margin: 0 80px 0 24px;
+
+.is-visable {
   opacity: 1;
-  width: 80px;
-  cursor: pointer;
-  path {
-    stroke: black;
+  transform: translateY(0em);
+}
+
+
+.about {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: $main;
+  font-size: 18px;
+  font-weight: 500;
+  .about-container {
+    margin: 40px;
+    width: 80%;
   }
-  &:hover {
-    transform: scale(1.01);
-    transition: 0.3s;
+  p {
+    font-size: 1em;
+    margin: 24px auto;
+  }
+  .is-visable-animate {
+    visibility: visible;
+    height: 200px;
+    path {
+      stroke: $pink;
+      stroke-dasharray: 4000;
+      animation: animate 3s;
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 4000;
+        opacity: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+      }
+    }
+    margin: 16px;
+  }
+
+  .linkedin {
+    visibility: hidden;
+  }
+  .github {
+    visibility: hidden;
   }
 }
 
-.next-button {
-  margin: 0 0 8px 0;
-  margin-left: 16px;
-  width: 150px;
-  cursor: pointer;
-  path {
-    stroke: $orange;
-  }
-  &:hover {
-    transform: scale(1.01);
-    transition: 0.3s;
-  }
-}
 

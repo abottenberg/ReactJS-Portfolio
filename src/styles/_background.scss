@@ -1,0 +1,128 @@
+@import './_colors.scss';
+.background-container {
+  position: fixed;
+  top: 0;
+}
+.letter {
+  img {
+    height: 12em;
+  }
+}
+
+.letter-0 {
+  animation-name: slideIn2;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-1 {
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-2 {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-3 {
+  animation-name: slideIn2;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-4 {
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-5 {
+  animation-name: slideIn;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-6 {
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-7 {
+  animation-name: slideIn2;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-8 {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-9 {
+  animation-name: slideIn;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-10 {
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-11 {
+  animation-name: slideIn2;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-12 {
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.letter-13 {
+  animation-name: slideIn;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-45deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
