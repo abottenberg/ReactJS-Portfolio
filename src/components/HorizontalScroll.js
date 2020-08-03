@@ -68,7 +68,7 @@ const HorizontalScroll = ({ projects }) => {
       <div className="wrapper">
         <div className="slide">
           <svg className="alex-bottenberg" width="1074px" height="870px" viewBox="0 0 1074 870" version="1.1">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round">
                 <g id="Group" transform="translate(10.664062, 10.585546)" stroke="#EDA1FF" strokeWidth="20">
                     <path d="M0,222.523829 C4.27999928,171.459495 5.18571811,191.018166 36.0234375,128.992579 C42.5772596,115.810519 47.294588,101.78332 53.4921875,88.4300787 C56.8197151,81.2606452 61.4425085,60.2137206 64.578125,67.4691412 C89.1145904,124.243424 93.9894026,208.762819 133.1875,265.047266" id="Path"></path>
                     <path d="M44.828125,159.437891 C53.5770448,159.882335 112.828125,161.479917 112.828125,167.430079" id="Path-2"></path>
