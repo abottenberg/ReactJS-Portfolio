@@ -42,7 +42,7 @@ const HorizontalScroll = ({ projects }) => {
     return (
       <div key={index}>
         <div className="video-container">
-          <video className="video" loop autoPlay>
+          <video className="video" loop autoPlay muted>
               <source src={project.video} type="video/mp4" />
           </video>
         </div>
