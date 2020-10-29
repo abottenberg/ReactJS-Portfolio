@@ -92,14 +92,17 @@ const HorizontalScroll = ({ projects }) => {
             </g>
           </svg>
         </div>
-        <div className="slide turning">
+        <div className="slide cleo">
           {renderedProjects[0]}
         </div>
-        <div className="slide jokester">
+        <div className="slide turning">
           {renderedProjects[1]}
         </div>
-        <div className="slide mister">
+        <div className="slide jokester">
           {renderedProjects[2]}
+        </div>
+        <div className="slide mister">
+          {renderedProjects[3]}
         </div>
         <div className="slide about">
           <About />

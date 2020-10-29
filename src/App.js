@@ -5,9 +5,16 @@ import './styles/_app.scss';
 
 import turningseasons from "./images/TurningSeasons.mov";
 import jokester from "./images/Jokester.mov";
+import cleopatrasworldwide from "./images/CleopatrasWorldwide.mov";
 import mistercocktail from "./images/MisterCocktail.mov";
 
  const projects = [
+    {
+      "title": "Cleopatras Worldwide",
+      "description": "Redesigning this digital magazine offering career and life advice to women",
+      "link": "https://cleopatrasworldwide.com/",
+      "video": cleopatrasworldwide
+    },
     {
       "title": "Turning Seasons",
       "description": "A group project made as part of the Le Wagon web development bootcamp. This was an idea I pitched to the group - a web app designed to make it easier to eat local, seasonal produce by showing inspiring recipes whose main ingredients are currently in season. Select recipes you like and add the ingredients to your shopping list. Made on Ruby on Rails",
